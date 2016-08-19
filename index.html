@@ -7,10 +7,10 @@
 	<h1>Star Wars</h1>
 	<!---->
 	<div id = "charSelect">
-		<img id="hero1" src="assets/images/Hero1.png">
-		<img id="hero2" src="assets/images/Hero2.png">
-		<img id="hero3" src="assets/images/Hero3.png">
-		<img id="hero4" src="assets/images/Hero4.png">
+		<img id="character1" src="assets/images/Hero1.png">
+		<img id="character2" src="assets/images/Hero2.png">
+		<img id="character3" src="assets/images/Hero3.png">
+		<img id="character4" src="assets/images/Hero4.png">
 	</div>
 	<div class="gameText">Your Character</div>
 	<div id = "foes"></div>
@@ -52,22 +52,29 @@
 		rivalAtk: 30
 	};
 	
-	$('#hero1').click(function(){
-		$('#charSelect').html('<img id="hero1" src="assets/images/Hero1.png">');
+	//charSelect function(){
+	$('#character1').click(function(){
+		$('#charSelect').html('<img id="character1" src="assets/images/Hero1.png">');
+		console.log('you clicked it');
+		$('#foes').html('<img id="character2" src="assets/images/Rival2.png">');
+		$('#foes').html('<img id="character3" src="assets/images/Rival3.png">');
+		$('#foes').html('<img id="character4" src="assets/images/Rival4.png">');
+	});
+	$('#character2').click(function(){
+		$('#charSelect').html('<img id="character2" src="assets/images/Hero2.png">');
 		console.log('you clicked it');
 	});
-	$('#hero2').click(function(){
-		$('#charSelect').html('<img id="hero2" src="assets/images/Hero2.png">');
+	$('#character3').click(function(){
+		$('#charSelect').html('<img id="character3" src="assets/images/Hero3.png">');
 		console.log('you clicked it');
 	});
-	$('#hero3').click(function(){
-		$('#charSelect').html('<img id="hero3" src="assets/images/Hero3.png">');
+	$('#character4').click(function(){
+		$('#charSelect').html('<img id="character4" src="assets/images/Hero4.png">');
 		console.log('you clicked it');
 	});
-	$('#hero4').click(function(){
-		$('#charSelect').html('<img id="hero4" src="assets/images/Hero4.png">');
-		console.log('you clicked it');
-	});
+//}
+
+//charSelect();
 </script>
 
 
