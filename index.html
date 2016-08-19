@@ -6,34 +6,68 @@
 <body>
 	<h1>Star Wars</h1>
 	<!---->
-	<div id = "charSelect"></div>
+	<div id = "charSelect">
+		<img id="hero1" src="assets/images/Hero1.png">
+		<img id="hero2" src="assets/images/Hero2.png">
+		<img id="hero3" src="assets/images/Hero3.png">
+		<img id="hero4" src="assets/images/Hero4.png">
+	</div>
 	<div class="gameText">Your Character</div>
 	<div id = "foes"></div>
 	<div class="gameText">Fight Section</div>
 	<button type="button">Attack</button>
 	<div id="defender"></div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 <script type="text/javascript">
 	//Hero Characters
 	//Will swap with enemy characters when one is chosen.
-	var ObiWan = {
-		hp: 120,
-		atk: 8
+	var char1 = {
+		name: 'Obi Wan Kenobi',
+		hp: 95,
+		atk: 16,
+		rival: 'Darth Maul',
+		rivalAtk: 20
+
 	};
-	var Luke = {
-		hp: 100,
-		atk: 6
+	var char2 = {
+		name: 'Luke Skywalker',
+		hp: 115,
+		atk: 14,
+		rival: 'Darth Vader',
+		rivalAtk: 15
 	};
-	var Rey = {
-		hp: 110,
-		atk: 7
+	var char3 = {
+		name: 'Rey',
+		hp: 90,
+		atk: 15,
+		rival: 'Kylo Ren',
+		rivalAtk: 25
+
 	};
-	var HanSolo = {
-		hp: 140,
-		atk: 5
+	var char4 = {
+		name: 'Han Solo',
+		hp: 105,
+		atk: 11,
+		rival: 'Boba Fett',
+		rivalAtk: 30
 	};
 	
-	console.log(ObiWan.hp);
-
+	$('#hero1').click(function(){
+		$('#charSelect').html('<img id="hero1" src="assets/images/Hero1.png">');
+		console.log('you clicked it');
+	});
+	$('#hero2').click(function(){
+		$('#charSelect').html('<img id="hero2" src="assets/images/Hero2.png">');
+		console.log('you clicked it');
+	});
+	$('#hero3').click(function(){
+		$('#charSelect').html('<img id="hero3" src="assets/images/Hero3.png">');
+		console.log('you clicked it');
+	});
+	$('#hero4').click(function(){
+		$('#charSelect').html('<img id="hero4" src="assets/images/Hero4.png">');
+		console.log('you clicked it');
+	});
 </script>
 
 
