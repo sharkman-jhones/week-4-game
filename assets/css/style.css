@@ -1,0 +1,16 @@
+.rivalThumbnail, .heroThumbnail{
+	margin: 5px;
+}
+
+.heroThumbnail{
+	border-style: solid;
+	border-color: green;
+	border-width: 5px;
+}
+
+.rivalThumbnail{
+	border-style: solid;
+	border-color: maroon;
+	border-width: 5px;
+}
+

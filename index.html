@@ -2,81 +2,38 @@
 <html>
 <head>
 	<title>Star Wars RPG</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
-	<h1>Star Wars</h1>
-	<!---->
-	<div id = "charSelect">
-		<img id="character1" src="assets/images/Hero1.png">
-		<img id="character2" src="assets/images/Hero2.png">
-		<img id="character3" src="assets/images/Hero3.png">
-		<img id="character4" src="assets/images/Hero4.png">
+<div class="container">
+	<div class="jumbotron">
+		<h1>Star Wars</h1>
 	</div>
-	<div class="gameText">Your Character</div>
-	<div id = "foes"></div>
+
+	<div id = "charSelect">
+		Select Your Hero <br>
+		<img id="character1-Select" class = "heroThumbnail" src="assets/images/Hero1.png">
+		<img id="character2-Select" class = "heroThumbnail" src="assets/images/Hero2.png">
+		<img id="character3-Select" class = "heroThumbnail" src="assets/images/Hero3.png">
+		<img id="character4-Select" class = "heroThumbnail" src="assets/images/Hero4.png">
+	</div>
+	<div id = "foes">
+		<img id="character1-Foe" class = "rivalThumbnail" src="assets/images/Rival1.png">
+		<img id="character2-Foe" class = "rivalThumbnail" src="assets/images/Rival2.png">
+		<img id="character3-Foe" class = "rivalThumbnail" src="assets/images/Rival3.png">
+		<img id="character4-Foe" class = "rivalThumbnail" src="assets/images/Rival4.png">	</div>
 	<div class="gameText">Fight Section</div>
 	<button type="button">Attack</button>
-	<div id="defender"></div>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
-<script type="text/javascript">
-	//Hero Characters
-	//Will swap with enemy characters when one is chosen.
-	var char1 = {
-		name: 'Obi Wan Kenobi',
-		hp: 95,
-		atk: 16,
-		rival: 'Darth Maul',
-		rivalAtk: 20
-
-	};
-	var char2 = {
-		name: 'Luke Skywalker',
-		hp: 115,
-		atk: 14,
-		rival: 'Darth Vader',
-		rivalAtk: 15
-	};
-	var char3 = {
-		name: 'Rey',
-		hp: 90,
-		atk: 15,
-		rival: 'Kylo Ren',
-		rivalAtk: 25
-
-	};
-	var char4 = {
-		name: 'Han Solo',
-		hp: 105,
-		atk: 11,
-		rival: 'Boba Fett',
-		rivalAtk: 30
-	};
-	
-	//charSelect function(){
-	$('#character1').click(function(){
-		$('#charSelect').html('<img id="character1" src="assets/images/Hero1.png">');
-		console.log('you clicked it');
-		$('#foes').html('<img id="character2" src="assets/images/Rival2.png">');
-		$('#foes').html('<img id="character3" src="assets/images/Rival3.png">');
-		$('#foes').html('<img id="character4" src="assets/images/Rival4.png">');
-	});
-	$('#character2').click(function(){
-		$('#charSelect').html('<img id="character2" src="assets/images/Hero2.png">');
-		console.log('you clicked it');
-	});
-	$('#character3').click(function(){
-		$('#charSelect').html('<img id="character3" src="assets/images/Hero3.png">');
-		console.log('you clicked it');
-	});
-	$('#character4').click(function(){
-		$('#charSelect').html('<img id="character4" src="assets/images/Hero4.png">');
-		console.log('you clicked it');
-	});
-//}
-
-//charSelect();
-</script>
-
-
+	<div id="defender">
+		<img id="character1-Battle" class = "rivalThumbnail" src="assets/images/Rival1.png">
+		<img id="character2-Battle" class = "rivalThumbnail" src="assets/images/Rival2.png">
+		<img id="character3-Battle" class = "rivalThumbnail" src="assets/images/Rival3.png">
+		<img id="character4-Battle" class = "rivalThumbnail" src="assets/images/Rival4.png">
+	</div>
+</div>
+<script type="text/javascript" src="assets/javascript/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
